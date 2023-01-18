@@ -1,10 +1,10 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 //Section Users
 const users = [
-    {name: 'John', age: 20},
-    {name: 'Alex', age: 25},
-    {name: 'Mike', age: 30},
+    { name: 'John', age: 20 },
+    { name: 'Alex', age: 25 },
+    { name: 'Mike', age: 30 },
 ]
 
 interface User {
@@ -34,13 +34,8 @@ const UserSearch: React.FC = () => {
     return (
         <div>
             User Search
-            <input ref={inputRef} value={name} onChange={e => setName(e.target.value)}/>
-            <button onClick={onClick}>Find User</button>
-            <div>
-                {user && user.name}
-                {user && user.age}
-            </div>
-        </div>
+            <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
+            <button onClick={onClick}>Find User</button></div>
     )
 }
 
