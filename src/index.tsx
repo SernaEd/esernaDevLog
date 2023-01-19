@@ -1,17 +1,19 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
-import {BookList} from "./components/BookListApp/containers/BookList";
 
-import "./components/BookListApp/styles/index.css";
+// import "./components/BookListApp/styles/index.css";
+import "./components/BackroadsApp/styles/styles.css";
+import {BackroadsApp} from "./components/BackroadsApp/BackroadsApp";
 
 const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el!);
 
 const App = () => {
     return (
-        <>
-            <BookList/>
-        </>
+        <React.StrictMode>
+            <BackroadsApp/>
+        </React.StrictMode>
+
     );
 };
 

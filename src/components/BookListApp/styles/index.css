@@ -18,6 +18,12 @@ body {
     gap: 2rem;
 }
 
+.BookList h1{
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: capitalize;
+}
+
 .Book {
     background: white;
     border-radius: 1rem;

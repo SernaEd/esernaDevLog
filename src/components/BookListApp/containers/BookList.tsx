@@ -18,6 +18,7 @@ export const BookList: React.FC = () => {
 
     return (
         <div className={'BookList'}>
+            <h1>Amazon Best Sellers</h1>
             <EventExamples/>
             {books.map((book, index) => {
                     return <Book {...book} onBookClick={getBook} key={book.id} number={index}>
