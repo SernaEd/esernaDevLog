@@ -3,7 +3,7 @@ import {
     Toolbar,
     Button,
     styled,
-    Box, IconButton, Menu, MenuItem, Typography, Grid, Theme
+    Box, IconButton, Menu, MenuItem, Typography, Grid
 } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import grapheke_transparent from "../../assets/Grapheke_Dark_transparent.png";
