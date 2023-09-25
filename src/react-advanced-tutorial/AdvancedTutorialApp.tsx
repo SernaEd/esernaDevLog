@@ -1,5 +1,5 @@
 import "./index.css"
-import {UseEffectCleanup} from "./components/UseEffectCleanup";
+import {UseEffectFetch} from "./components/UseEffectFetch";
 export const AdvancedTutorialApp = () => {
     return (
         <div className={'container'}>
@@ -7,7 +7,8 @@ export const AdvancedTutorialApp = () => {
             {/*<UseStateObject/>*/}
             {/*<UseStateCounter/>*/}
             {/*<UseEffectBasics/>*/}
-            <UseEffectCleanup/>
+            {/*<UseEffectCleanup/>*/}
+            <UseEffectFetch/>
         </div>
     );
 }
