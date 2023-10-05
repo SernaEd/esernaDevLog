@@ -1,15 +1,19 @@
 import {Navbar} from "./components/UI/Navbar";
 import {MainView} from "./components/UI/MainView";
 import {Rightbar} from "./components/UI/Rightbar";
-import {Stack} from "@mui/material";
+import {PaletteMode, Stack} from "@mui/material";
 import React from "react";
 
 export const ColorModeContext = React.createContext({toggleColorMode: () => {}});
 
-export const CVWebsiteApp = () => {
+interface CVWebsiteAppProps {
+    themeMode: PaletteMode
+}
+
+export const CVWebsiteApp = ({themeMode}: CVWebsiteAppProps) => {
     return (
         <div>
-            <Navbar/>
+            <Navbar themeMode={themeMode}/>
             <Stack direction="row" justifyContent="space-between">
                 <MainView/>
                 <Rightbar/>

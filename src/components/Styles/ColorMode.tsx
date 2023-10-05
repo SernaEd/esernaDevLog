@@ -23,8 +23,9 @@ export default function ToggleColorMode(){
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
-                <CVWebsiteApp/>
+                <CVWebsiteApp themeMode={theme.palette.mode}/>
             </ThemeProvider>
         </ColorModeContext.Provider>
     )
 }
+// TODO: Make color mode toggle with user preference
