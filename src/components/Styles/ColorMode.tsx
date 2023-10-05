@@ -1,10 +1,12 @@
 import React from "react";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import {createTheme, CssBaseline, ThemeProvider, useMediaQuery} from "@mui/material";
 import {ColorModeContext, CVWebsiteApp} from "../../CVWebsiteApp";
 import {getDesignTokens} from "../../theme";
 
 export default function ToggleColorMode(){
-    const [mode, setMode] = React.useState<'light'|'dark'>('light');
+    const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+    const [mode, setMode] = React.useState<'light'|'dark'>(prefersDarkMode ? 'dark' : 'light');
     const colorMode = React.useMemo(() => ({
             toggleColorMode: () => {
                 setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
