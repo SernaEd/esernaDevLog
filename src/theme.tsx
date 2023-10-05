@@ -56,7 +56,33 @@ export const getDesignTokens = (mode: PaletteMode) => ({
     spacing: 6,
     shape: {
         borderRadius: 20,
-    }
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: `
+                body {
+                    scrollbar-color: ${mode === 'dark' ? '#289279' : '#00df81'} ${mode === 'dark' ? '#333' : '#fff'};
+                    scrollbar-width: thin;
+
+                    /* For Microsoft Edge and other Webkit browsers */
+                    &::-webkit-scrollbar {
+                        width: 12px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: ${mode === 'dark' ? '#333' : '#fff'};
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: ${mode === 'dark' ? '#289279' : '#00df81'};
+                        border-radius: 20px;
+                        border: 3px solid ${mode === 'dark' ? '#333' : '#fff'};
+                        background-clip: padding-box;
+                        box-shadow: inset 0 0 14px 14px ${mode === 'dark' ? '#289279' : '#00df81'}, 
+                                    inset -1px -1px 0px 16px ${mode === 'dark' ? '#333' : '#fff'};
+                    }
+                }
+            `,
+        },
+    },
 });
 
 
