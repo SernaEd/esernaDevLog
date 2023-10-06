@@ -3,7 +3,7 @@ import {
     Toolbar,
     Button,
     styled,
-    Box, IconButton, Menu, MenuItem, Typography, Grid
+    Box, IconButton, Menu, MenuItem, Typography, Grid, Stack
 } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import grapheke_transparent from "../../assets/Grapheke_Dark_transparent.png";
@@ -99,14 +99,24 @@ export const Navbar = ({themeMode}: NavbarProps) => {
                             </MenuItem>
                         ))}
                         <MenuItem key={'Light/Dark Mode'} onClick={colorMode.toggleColorMode}>
-                            {themeMode === 'light' ? <NightlightIcon/> : <LightModeIcon/>}
+                            {themeMode === 'light' ? 
+                                <Stack direction="row">
+                                    <NightlightIcon/>
+                                    <Typography sx={{paddingLeft: 2}}>Night Mode</Typography>
+                                </Stack>
+                                 : 
+                                 <Stack direction="row">
+                                    <LightModeIcon/>
+                                    <Typography sx={{paddingLeft: 2}}>Light Mode</Typography>
+                                 </Stack>
+                                }
                         </MenuItem>
                     </Menu>
                 </Box>
 
                 <Grid sx={{display: {xs: "none", lg: "flex"}}}>
                     {pages.map((page) => (
-                        <Grid item>
+                        <Grid item key={page}>
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
