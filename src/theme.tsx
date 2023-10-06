@@ -1,4 +1,5 @@
 import {createTheme, PaletteMode} from "@mui/material";
+import darkBanner from "./assets/DarkBanner.png";
 
 export const getDesignTokens = (mode: PaletteMode) => ({
     palette: {
@@ -51,7 +52,7 @@ export const getDesignTokens = (mode: PaletteMode) => ({
     },
     typography: {
         fontFamily: 'Montserrat',
-        fontSize: 16,
+        fontSize: 18,
     },
     spacing: 6,
     shape: {
@@ -61,6 +62,11 @@ export const getDesignTokens = (mode: PaletteMode) => ({
         MuiCssBaseline: {
             styleOverrides: `
                 body {
+                    background-image: url('${darkBanner}'); /* Your background image path */
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 100vh;
+                    margin: 0;
                     scrollbar-color: ${mode === 'dark' ? '#289279' : '#00df81'} ${mode === 'dark' ? '#333' : '#fff'};
                     scrollbar-width: thin;
 
@@ -84,6 +90,8 @@ export const getDesignTokens = (mode: PaletteMode) => ({
         },
     },
 });
+
+// TODO: Insert Light Mode Background!
 
 
 

@@ -24,10 +24,11 @@ export const Rightbar = () => {
                   sx={{padding: 0}}>
                 {labels.map((label, index) => {
                     return (
-                        <Tooltip title={label} placement="left">
+                        <Tooltip title={label} placement="left" key={index}>
                             <ListItemButton aria-label={label} 
                                         href={links[index]}
                                         target="_blank"
+                                        key={index}
                                         sx={{padding: 1}}>
                                 {icons[index]}
                             </ListItemButton>
