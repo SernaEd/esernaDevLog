@@ -1,5 +1,6 @@
 import {createTheme, PaletteMode} from "@mui/material";
 import darkBanner from "./assets/DarkBanner.png";
+import lightBanner from "./assets/LightBanner.png"
 
 export const getDesignTokens = (mode: PaletteMode) => ({
     palette: {
@@ -62,7 +63,7 @@ export const getDesignTokens = (mode: PaletteMode) => ({
         MuiCssBaseline: {
             styleOverrides: `
                 body {
-                    background-image: url('${darkBanner}'); /* Your background image path */
+                    background-image: url('${mode === 'dark' ? darkBanner : lightBanner}'); /* Your background image path */
                     background-size: cover;
                     background-repeat: no-repeat;
                     height: 100vh;
@@ -90,9 +91,6 @@ export const getDesignTokens = (mode: PaletteMode) => ({
         },
     },
 });
-
-// TODO: Insert Light Mode Background!
-
 
 
 export const darkTheme = createTheme({
