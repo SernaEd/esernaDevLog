@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.7e74e03b.js",
+    "main.js": "/static/js/main.5f1bed30.js",
     "static/media/DarkBanner.png": "/static/media/DarkBanner.ea6ef981cb444a445759.png",
+    "static/media/LightBanner.png": "/static/media/LightBanner.07bb62cce0af8ad83daa.png",
     "static/media/Grapheke_Dark_transparent.png": "/static/media/Grapheke_Dark_transparent.8d43008f0675125b969a.png",
     "static/media/Grapheke-logo-dark.png": "/static/media/Grapheke-logo-dark.bff9a2a7d7466e24fc3e.png",
     "index.html": "/index.html",
-    "main.7e74e03b.js.map": "/static/js/main.7e74e03b.js.map"
+    "main.5f1bed30.js.map": "/static/js/main.5f1bed30.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e74e03b.js"
+    "static/js/main.5f1bed30.js"
   ]
 }
