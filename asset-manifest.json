@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.e88939a0.js",
+    "main.css": "/static/css/main.c2098916.css",
+    "main.js": "/static/js/main.f4f0273e.js",
     "static/media/vid3.mp4": "/static/media/vid3.eec0301025deff4b4c34.mp4",
     "static/media/DarkBanner.png": "/static/media/DarkBanner.ea6ef981cb444a445759.png",
     "static/media/vid2.mp4": "/static/media/vid2.d20cf88b5923a3bae584.mp4",
     "static/media/vid1.mp4": "/static/media/vid1.387a3e3c708666e8ed31.mp4",
+    "static/media/ComcaplaBanner.png": "/static/media/ComcaplaBanner.397ad04016511b282b3a.png",
     "static/media/LightBanner.png": "/static/media/LightBanner.07bb62cce0af8ad83daa.png",
     "static/media/vid5.mp4": "/static/media/vid5.bd59f081349b3b295746.mp4",
     "static/media/vid9.mp4": "/static/media/vid9.dea48d97913d7532aeef.mp4",
@@ -15,9 +17,11 @@
     "static/media/Grapheke_Dark_transparent.png": "/static/media/Grapheke_Dark_transparent.8d43008f0675125b969a.png",
     "static/media/Grapheke-logo-dark.png": "/static/media/Grapheke-logo-dark.bff9a2a7d7466e24fc3e.png",
     "index.html": "/index.html",
-    "main.e88939a0.js.map": "/static/js/main.e88939a0.js.map"
+    "main.c2098916.css.map": "/static/css/main.c2098916.css.map",
+    "main.f4f0273e.js.map": "/static/js/main.f4f0273e.js.map"
   },
   "entrypoints": [
-    "static/js/main.e88939a0.js"
+    "static/css/main.c2098916.css",
+    "static/js/main.f4f0273e.js"
   ]
 }
