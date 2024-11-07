@@ -16,7 +16,7 @@ const PlaceholderCard: React.FC<CardProps> = ({ title, videoUrl, description }) 
                 <Skeleton variant="rectangular" height={150} animation="wave" />
             )}
             <CardContent>
-                <Typography variant="h5">
+                <Typography variant="h6">
                     {title ?? <Skeleton animation="wave" />}
                 </Typography>
                 <Typography variant="body2">
