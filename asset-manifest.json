@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c2098916.css",
-    "main.js": "/static/js/main.f4f0273e.js",
+    "main.js": "/static/js/main.69874488.js",
     "static/media/vid3.mp4": "/static/media/vid3.eec0301025deff4b4c34.mp4",
     "static/media/DarkBanner.png": "/static/media/DarkBanner.ea6ef981cb444a445759.png",
     "static/media/vid2.mp4": "/static/media/vid2.d20cf88b5923a3bae584.mp4",
@@ -18,10 +18,10 @@
     "static/media/Grapheke-logo-dark.png": "/static/media/Grapheke-logo-dark.bff9a2a7d7466e24fc3e.png",
     "index.html": "/index.html",
     "main.c2098916.css.map": "/static/css/main.c2098916.css.map",
-    "main.f4f0273e.js.map": "/static/js/main.f4f0273e.js.map"
+    "main.69874488.js.map": "/static/js/main.69874488.js.map"
   },
   "entrypoints": [
     "static/css/main.c2098916.css",
-    "static/js/main.f4f0273e.js"
+    "static/js/main.69874488.js"
   ]
 }
