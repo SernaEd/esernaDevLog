@@ -4,7 +4,7 @@ import {Rightbar} from "./components/UI/Rightbar";
 import {Box, Grid, PaletteMode, Stack, Typography} from "@mui/material";
 import React from "react";
 import PlaceholderCard from "./components/UI/PlaceholderCard";
-import LoremIpsum from "react-lorem-ipsum";
+// import LoremIpsum from "react-lorem-ipsum";
 import video1 from './assets/animations/vid1.mp4';
 import video2 from './assets/animations/vid2.mp4';
 import video3 from './assets/animations/vid3.mp4';
