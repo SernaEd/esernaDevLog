@@ -15,6 +15,7 @@ import video7 from './assets/animations/vid7.mp4';
 import video8 from './assets/animations/vid8.mp4';
 import video9 from './assets/animations/vid9.mp4';
 import comcapla from "./assets/ComcaplaBanner.png";
+import DownloadPptxWithThumbnailComponent from "./components/UI/DownloadPptxWithThumbnailComponent";
 
 export const ColorModeContext = React.createContext({toggleColorMode: () => {}});
 
@@ -182,13 +183,26 @@ export const CVWebsiteApp = ({themeMode}: CVWebsiteAppProps) => {
                 <Typography variant="h5">
                     Abstract del Proyecto
                 </Typography>
-                <Typography variant="body1">
-                    En este trabajo, presentamos un análisis teórico-computacional de los efectos de la interacción espín-órbita tipo Rashba (SOIR) en la dinámica y dispersión cuántica de fermiones de Dirac (fD) en el grafeno mono-capa (MLG).
-                    Usando una aproximación de un paquete de ondas gaussiano (GWP), calculamos la evolución temporal del GWP, para diferentes valores de su número de onda, la energía inicial y la intensidad de la barrera de potencial.
-                    Mostramos que la SOIR provoca un cambio en la apariencia y en la intensidad del coeficiente de transmisión.
-                    Esto aporta una importante cuestión a la investigación del grafeno, debido a que en el MLG no se había detectado variaciones en el coeficiente de transmisión bajo una incidencia normal.
-                    Finalmente, se muestra una nueva propuesta para calcular la densidad de corriente de probabilidad de un flujo de fD en el MLG con interferencia de canales, algo que no se había reportado en la literatura.
-                </Typography>
+                <Box>
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} md={6}>
+                            <Typography variant="body1">
+                                En este trabajo, presentamos un análisis teórico-computacional de los efectos de la interacción espín-órbita tipo Rashba (SOIR) en la dinámica y dispersión cuántica de fermiones de Dirac (fD) en el grafeno mono-capa (MLG).
+                                Usando una aproximación de un paquete de ondas gaussiano (GWP), calculamos la evolución temporal del GWP, para diferentes valores de su número de onda, la energía inicial y la intensidad de la barrera de potencial.
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={6} display="flex" justifyContent="flex-end">
+                            <DownloadPptxWithThumbnailComponent/>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant="body1">
+                                Mostramos que la SOIR provoca un cambio en la apariencia y en la intensidad del coeficiente de transmisión.
+                                Esto aporta una importante cuestión a la investigación del grafeno, debido a que en el MLG no se había detectado variaciones en el coeficiente de transmisión bajo una incidencia normal.
+                                Finalmente, se muestra una nueva propuesta para calcular la densidad de corriente de probabilidad de un flujo de fD en el MLG con interferencia de canales, algo que no se había reportado en la literatura.
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Box>
             </Stack>
         </div>
     );

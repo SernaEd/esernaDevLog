@@ -62,12 +62,12 @@ export const Navbar = ({themeMode}: NavbarProps) => {
             <StyledToolbar>
                 <Button variant="text"
                         sx={{display: {xs: "none", md: "block"}, width: logo_images[0].width, padding: 0}}>
-                    <img src={logo_images[0].url} alt={logo_images[0].title} width={logo_images[0].width}
+                    <img className="hoverAble" src={logo_images[0].url} alt={logo_images[0].title} width={logo_images[0].width}
                          height={logo_images[0].height}/>
                 </Button>
                 <Button variant="text"
                         sx={{display: {xs: "block", md: "none"}, width: logo_images[1].width, padding: 0}}>
-                    <img src={logo_images[1].url} alt={logo_images[1].title} width={logo_images[1].width}
+                    <img className="hoverAble" src={logo_images[1].url} alt={logo_images[1].title} width={logo_images[1].width}
                          height={logo_images[1].height}/>
                 </Button>
                 <Typography variant='h6' component='div' sx={{flexGrow: 1, display: "flex"}}>Eduardo Serna</Typography>
