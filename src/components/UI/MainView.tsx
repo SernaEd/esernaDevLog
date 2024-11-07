@@ -7,15 +7,16 @@ export const MainView = () => {
                 // bgcolor="purple"
                 sx={{
                     maxWidth: '96%', 
-                    paddingLeft: 6,
+                    paddingLeft: { xs: 2, sm: 6 },
                     height: '100vh',
-                    paddingTop: '20%'
+                    paddingTop: '20%',
+                    overflow: 'auto'
                 }}
                 >
-                <Typography variant="h1" gutterBottom>
+                <Typography variant="h2" gutterBottom>
                     ¡Hola
                 </Typography>
-                <Typography variant="h1" gutterBottom>
+                <Typography variant="h2" gutterBottom>
                     COMCAPLA!
                 </Typography>
                 <Typography variant="body1" paragraph>

@@ -81,7 +81,9 @@ export const CVWebsiteApp = ({themeMode}: CVWebsiteAppProps) => {
     return (
         <div>
             <Navbar themeMode={themeMode}/>
-            <Stack direction="row" justifyContent="space-between">
+            <Stack direction="row" justifyContent="space-between" sx={{
+                maxWidth: "100%"
+            }}>
                 <MainView/>
                 <Rightbar/>
             </Stack>
