@@ -14,7 +14,13 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 
-const pages = ['Projects', 'Clients/Employers', 'About', 'Download CV', 'Contact']
+const pages = [
+    // 'Projects',
+    // 'Clients/Employers',
+    'About',
+    // 'Download CV',
+    // 'Contact'
+]
 
 const StyledToolbar = styled(Toolbar)(() => ({
     display: "flex",

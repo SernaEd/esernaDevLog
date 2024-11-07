@@ -1,23 +1,33 @@
 import React from 'react';
-import { Card, CardContent, Typography, Skeleton } from '@mui/material';
+import {Card, CardContent, Typography, Skeleton, CardMedia} from '@mui/material';
 
-const PlaceholderCard: React.FC = () => {
-  return (
-    <Card variant="outlined" style={{ maxWidth: 300, margin: 6, minWidth: '30%' }}>
-      <Skeleton variant="rectangular" height={150} animation="wave" />
-      <CardContent>
-        <Typography variant="h5">
-          <Skeleton animation="wave" />
-        </Typography>
-        <Typography variant="body2">
-          <Skeleton animation="wave" />
-        </Typography>
-        <Typography variant="body2">
-          <Skeleton animation="wave" />
-        </Typography>
-      </CardContent>
-    </Card>
-  );
+interface CardProps {
+    title?: string;
+    videoUrl?: string;
+    description?: string;
+}
+
+const PlaceholderCard: React.FC<CardProps> = ({ title, videoUrl, description }) => {
+    return (
+        <Card variant="outlined" style={{ minWidth: '100%', margin: 6 }}>
+            {videoUrl ? (
+                <CardMedia component="video" height="100%" src={videoUrl} controls />
+            ) : (
+                <Skeleton variant="rectangular" height={150} animation="wave" />
+            )}
+            <CardContent>
+                <Typography variant="h5">
+                    {title ?? <Skeleton animation="wave" />}
+                </Typography>
+                <Typography variant="body2">
+                    {description ?? <Skeleton animation="wave" />}
+                </Typography>
+                {/*<Typography variant="body2">*/}
+                {/*    <Skeleton animation="wave" />*/}
+                {/*</Typography>*/}
+            </CardContent>
+        </Card>
+    );
 };
 
 export default PlaceholderCard;

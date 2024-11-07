@@ -13,12 +13,10 @@ export const MainView = () => {
                 }}
                 >
                     <Typography variant="h4" gutterBottom>
-                        Everything can be done!
+                        PÁGINA BAJO DESARROLLO
                     </Typography>
                     <Typography variant="body1" paragraph>
-                        Hello! In this website you will find everything you need to know about me.
-                        <br/>
-                        And if not, you can just ask!
+                        SCROLL DOWN TO SEE MORE - DESLICE HACIA ABAJO PARA VER MÁS
                     </Typography>
                     <Typography variant="h6">
                         WEBSITE IN DEVELOPMENT
