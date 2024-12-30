@@ -12,7 +12,7 @@ and then run `npm install`
 
 ---
 
-To reload files in vscode for typescript use
+To reload files in vscode for TypeScript use
 
     Ctrl + shift + p ---> Reload Window 
 
