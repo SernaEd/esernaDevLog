@@ -24,6 +24,3 @@ const thirdBook: BookProps = {
     url: perro
 }
 
-export const books = [
-    firstBook, secondBook, thirdBook
-]

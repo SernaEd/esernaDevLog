@@ -10,14 +10,6 @@ body {
     color: #222;
 }
 
-.BookList {
-    width: 90vw;
-    max-width: 1170px;
-    margin: 5rem auto;
-    display: grid;
-    gap: 2rem;
-}
-
 .BookList h1{
     text-align: center;
     margin-top: 4rem;
@@ -54,9 +46,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .BookList {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 
