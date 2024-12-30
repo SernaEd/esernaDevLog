@@ -7,8 +7,8 @@ version: "1.0"
 profile:
   name: qodana.starter
 #Enable inspections
-#include:
-#  - name: <SomeEnabledInspectionId>
+include:
+  - name: EmptyDirectory
 #Disable inspections
 #exclude:
 #  - name: <SomeDisabledInspectionId>
