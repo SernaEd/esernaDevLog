@@ -16,6 +16,7 @@ import video8 from './assets/animations/vid8.mp4';
 import video9 from './assets/animations/vid9.mp4';
 import comcapla from "./assets/ComcaplaBanner.png";
 import DownloadPptxWithThumbnailComponent from "./components/UI/DownloadPptxWithThumbnailComponent";
+import DownloadPaperWithThumbnailComponent from "./components/UI/DownloadPaperWithThumbnailComponent";
 
 export const ColorModeContext = React.createContext({toggleColorMode: () => {}});
 
@@ -205,6 +206,10 @@ export const CVWebsiteApp = ({themeMode}: CVWebsiteAppProps) => {
                         </Grid>
                     </Grid>
                 </Box>
+                <Typography variant="h5">
+                    Artículo completo
+                </Typography>
+                <DownloadPaperWithThumbnailComponent/>
             </Stack>
         </div>
     );

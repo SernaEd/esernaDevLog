@@ -2,6 +2,7 @@ import React from "react";
 import {createTheme, CssBaseline, ThemeProvider, useMediaQuery} from "@mui/material";
 import {ColorModeContext, CVWebsiteApp} from "../../CVWebsiteApp";
 import {getDesignTokens} from "../../theme";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 
 export default function ToggleColorMode(){
     const [isDarkMode] = React.useState<boolean>(useMediaQuery("(prefers-color-scheme: dark)"));
@@ -38,7 +39,12 @@ export default function ToggleColorMode(){
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
-                <CVWebsiteApp themeMode={theme.palette.mode}/>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path={'/COMCAPLA2024'} element={<CVWebsiteApp themeMode={theme.palette.mode}/>}/>
+                        <Route path="*" element={<Navigate to="/COMCAPLA2024" replace/>}/>
+                    </Routes>
+                </BrowserRouter>
             </ThemeProvider>
         </ColorModeContext.Provider>
     )
