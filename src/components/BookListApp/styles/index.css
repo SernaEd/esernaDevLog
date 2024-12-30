@@ -16,14 +16,6 @@ body {
     text-transform: capitalize;
 }
 
-.Book {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    position: relative;
-}
-
 .Book img{
     width: 100%;
     object-fit: cover;
@@ -32,17 +24,6 @@ body {
 .Book h2 {
     margin-top: 1rem;
     font-size: 1rem;
-}
-
-.number{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: orange;
-    color: white;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 1rem 0 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
