@@ -5,15 +5,3 @@ import {Services} from "./components/Services";
 import {Tours} from "./components/Tours";
 import {Footer} from "./components/Footer";
 
-export const BackroadsApp = () => {
-    return (
-        <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Services />
-            <Tours />
-            <Footer />
-        </>
-    );
-}

@@ -31,4 +31,3 @@ const UserSearch: React.FC = () => {
     )
 }
 
-export default UserSearch;

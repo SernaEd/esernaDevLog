@@ -382,9 +382,7 @@ Featured Tours
 .tour-footer p span {
     margin-right: 0.25rem;
 }
-.tour-btn {
-    text-align: center;
-}
+
 @media screen and (min-width: 768px) {
     .featured-center {
         display: grid;
@@ -416,26 +414,7 @@ Footer
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
-.footer-link {
-    color: var(--clr-white);
-    text-transform: capitalize;
-    font-size: 1rem;
-    margin-right: 1rem;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
-}
-.footer-link:hover {
-    color: var(--clr-primary-5);
-}
-.footer-icon {
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: var(--clr-white);
-    transition: var(--transition);
-}
-.footer-icon:hover {
-    color: var(--clr-primary-5);
-}
+
 .copyright {
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -488,30 +467,14 @@ Navbar
 .nav-toggle:hover {
     transform: scale(1.2);
 }
-.nav-link {
-    display: block;
-    padding: 1rem 2rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
-    color: var(--clr-grey-1);
-    cursor: pointer;
-    font-size: 1rem;
-}
-.nav-link:hover {
-    color: var(--clr-primary-1);
-    background: var(--clr-primary-8);
-    padding-left: 2.25rem;
-}
+
 /* nav toggle functionality */
 .nav-links {
     height: 0;
     overflow: hidden;
     transition: var(--transition);
 }
-.show-links {
-    height: 280px;
-}
+
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
     /* hide nav toggle button */
@@ -533,28 +496,9 @@ Navbar
     .nav-header {
         padding: 0 0;
     }
-    .nav-link {
-        padding: 0 0;
-    }
-    .nav-link:hover {
-        padding: 0;
-        color: var(--clr-primary-5);
-        background: transparent;
-    }
+
     .nav-icons {
         display: flex;
     }
 
-    .nav-link {
-        margin-right: 0.7rem;
-    }
-    .nav-icon {
-        margin-right: 0.7rem;
-        color: var(--clr-primary-5);
-        font-size: 1.2rem;
-        transition: var(--transition);
-    }
-    .nav-icon:hover {
-        color: var(--clr-primary-8);
-    }
 }

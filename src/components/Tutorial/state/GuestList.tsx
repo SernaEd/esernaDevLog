@@ -22,4 +22,3 @@ const GuestList: React.FC = () => {
     );
 };
 
-export default GuestList;

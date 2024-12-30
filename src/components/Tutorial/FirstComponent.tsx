@@ -4,4 +4,3 @@ const FirstComponent: React.FC = () => {
     return React.createElement('h1',{},'Hello World');
 };
 
-export default FirstComponent;

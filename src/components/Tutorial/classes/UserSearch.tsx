@@ -46,4 +46,3 @@ class UserSearch extends Component<UserSearchProps> {
 
 }
 
-export default UserSearch;
