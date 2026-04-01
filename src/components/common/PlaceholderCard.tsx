@@ -11,7 +11,7 @@ const PlaceholderCard: React.FC<CardProps> = ({ title, videoUrl, description }) 
     return (
         <Card variant="outlined" style={{ minWidth: '100%', margin: 6 }}>
             {videoUrl ? (
-                <CardMedia component="video" height="100%" src={videoUrl} controls />
+                <CardMedia component="video" height="100%" src={videoUrl} autoPlay loop controls />
             ) : (
                 <Skeleton variant="rectangular" height={150} animation="wave" />
             )}
